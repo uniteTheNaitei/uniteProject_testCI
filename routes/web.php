@@ -45,3 +45,5 @@ Route::group(['prefix'=>'admin'],function() {
         Route::post('fix/{idperson}', 'PermissionController@postFix');
     });
 });
+Route::get('index', 'MainController@index');
+Route::get('about', 'MainController@about');
