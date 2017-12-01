@@ -19,8 +19,7 @@ class CreateCourseTable extends Migration {
 			$table->integer('idCoach')->index('idCoach_idx');
 			$table->float('Money', 10, 0)->nullable()->default(0);
 			$table->string('info', 450)->nullable();
-			$table->float('minHeight', 10, 0);
-			$table->float('minWeight', 10, 0);
+			$table->integer('level');
 			$table->string('img_1', 300)->nullable();
 			$table->string('img_2', 300)->nullable();
 		});

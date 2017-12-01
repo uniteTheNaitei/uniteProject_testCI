@@ -21,6 +21,7 @@ class CreatePersonTable extends Migration {
 			$table->float('weight', 10, 0)->nullable();
 			$table->float('height', 10, 0)->nullable();
 			$table->string('address', 45)->nullable();
+			$table->integer('age')->nullable();
 		});
 	}
 

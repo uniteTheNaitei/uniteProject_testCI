@@ -17,7 +17,7 @@ class CreateJoincourseTable extends Migration {
 			$table->integer('idjoinCourse', true);
 			$table->integer('idCourse')->index('idCourse_idx');
 			$table->integer('idUser')->index('idUser_idx');
-			$table->time('startTime');
+			$table->dateTime('startTime');
 		});
 	}
 
