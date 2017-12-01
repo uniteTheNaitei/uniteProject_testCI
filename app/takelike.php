@@ -4,7 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Permission extends Model
+class takelike extends Model
 {
-    protected $table = "permission";
+	protected $table = "takelike";
+    //
 }
