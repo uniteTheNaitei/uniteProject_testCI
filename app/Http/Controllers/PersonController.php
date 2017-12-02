@@ -8,6 +8,7 @@ use App\Person;
 class PersonController extends Controller
 {
     //
+	
     public function getList()
     {
         $person=Person::all();
