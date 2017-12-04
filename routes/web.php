@@ -10,6 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Person;
+use App\Course;
+use App\comment;
+use App\JoinCourse;
 
 // Route::get('/', function () {
 //     return view('index');
@@ -48,7 +52,16 @@ Route::group(['prefix'=>'admin'],function() {
         Route::post('fix/{idperson}', 'PermissionController@postFix');
     });
 });
+
 Route::get('index', 'MainController@index');
 Route::get('/', 'MainController@index');
 
 Route::get('about', 'MainController@about');
+
+Auth::routes();
+Route::get('signup', 'PersonController@getSignup');
+Route::post('signup', 'PersonController@postSignup');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('profile','HomeController@profile')->name('profile');
+Route::get('fix/{idPerson}','HomeController@fix');
+Route::post('fix/{idPerson}','HomeController@postFix');
