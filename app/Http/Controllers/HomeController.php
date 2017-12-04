@@ -30,6 +30,9 @@ class HomeController extends Controller
     {
         return view('profile');
     }
+    public  function tutorial(){
+        return view('mytutorial');
+    }
     public function fix()
     {
         return view('fix');

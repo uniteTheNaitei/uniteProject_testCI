@@ -76,6 +76,7 @@
                                             {{ csrf_field() }}
                                         </form>
                                         <a href="profile" >My Profile</a>
+                                        <a href="tutorial" >My Tutorial</a>
                                     </li>
                                 </ul>
                             </li>

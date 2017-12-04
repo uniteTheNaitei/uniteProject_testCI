@@ -68,5 +68,6 @@ Route::get('signup', 'PersonController@getSignup');
 Route::post('signup', 'PersonController@postSignup');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('profile','HomeController@profile')->name('profile');
+Route::get('tutorial','HomeController@tutorial')->name('tutorial');
 Route::get('fix/{idPerson}','HomeController@fix');
 Route::post('fix/{idPerson}','HomeController@postFix');
