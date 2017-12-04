@@ -8,6 +8,7 @@ use App\Person;
 class PersonController extends Controller
 {
     //
+	
     public function getList()
     {
         $person=Person::all();
@@ -47,7 +48,7 @@ class PersonController extends Controller
         $person=Person::find($idPerson);
         return view('admin.person.fix',['person'=>$person]);
     }
-    public function postFix(Request $request,$idPerson)
+   public function postFix(Request $request,$idPerson)
     {
         $this->validate($request,[
             'name'=>'min:3|max:30',
