@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 Route::get('/index', function() {
     return view('index');
 });
@@ -49,4 +49,6 @@ Route::group(['prefix'=>'admin'],function() {
     });
 });
 Route::get('index', 'MainController@index');
+Route::get('/', 'MainController@index');
+
 Route::get('about', 'MainController@about');

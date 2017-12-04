@@ -135,6 +135,7 @@
 					<div class="col-md-8 col-md-offset-2">
 						<div class="heading-section text-center animate-box">
 							<h2>Class Schedule</h2>
+							
 							<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
 						</div>
 					</div>

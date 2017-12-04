@@ -77,12 +77,13 @@ figure {
 .fh5co-cover,
 .fh5co-hero {
   position: relative;
-  height: 800px;
+  height: 500px; 
+  /*800*/
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover,
   .fh5co-hero {
-    height: 700px;
+    height: 500px;
   }
 }
 .fh5co-cover.fh5co-hero-2,
@@ -485,7 +486,8 @@ figure {
 #fh5co-contact {
   padding: 7em 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { 
+  /*768*/
   #fh5co-programs-section,
   #fh5co-schedule-section,
   #fh5co-team-section,
