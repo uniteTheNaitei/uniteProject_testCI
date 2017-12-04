@@ -15,8 +15,11 @@ use App\Course;
 use App\comment;
 use App\JoinCourse;
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/index', function() {
+    return view('index');
 });
 Route::group(['prefix'=>'admin'],function() {
     Route::group(['prefix' => 'person'], function () {
@@ -50,19 +53,11 @@ Route::group(['prefix'=>'admin'],function() {
     });
 });
 
-Route::get('test', function(){
-	$user = JoinCourse::find(2);
-	$lesson = $user->takeLesson;
-	echo $user;
-});
+Route::get('index', 'MainController@index');
+Route::get('/', 'MainController@index');
 
-Route::get('test1', function() {
-	$course = Person::find(1);
-	$person = $course->likedCourse;
-	foreach ($person as $key) {
-		echo $key;
-	}
-});
+Route::get('about', 'MainController@about');
+
 Auth::routes();
 Route::get('signup', 'PersonController@getSignup');
 Route::post('signup', 'PersonController@postSignup');
