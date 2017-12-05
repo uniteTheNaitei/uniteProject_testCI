@@ -44,5 +44,6 @@ class Person extends Authenticatable
 	public function likedCourse(){
 		return $this->hasManyThrough('App\Course', 'App\takeLike', 'idperson', 'idCourse', 'idPerson', 'idPost')->where('likeType', 1);
 	}
+	
 
 }
