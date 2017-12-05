@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container content">
+<div class=" content" style="background: gainsboro">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <table class="table table-bordered text-center">
+            <table class="table table-bordered text-center " style="margin-top: 20px ">
                 <tr>
                     <td colspan="2" class=" danger">Imformation</td>
                 </tr>
@@ -38,8 +38,7 @@
                 </tr>
             </table>
              <div >
-            <a href="fix/{{ Auth::user()->idPerson}}" class="fix" >Fix Information</a>
-            <a href="http://localhost:8000/home" class="fix" style="float: right">Comback to home</a>
+                 <button class="btn " style="background: pink; float: right; margin-bottom: 15px"  ><a href="fix/{{ Auth::user()->idPerson}}" class="fix" >Fix Information</a></button>
              </div>
         </div>
     </div>

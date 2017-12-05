@@ -1,10 +1,11 @@
-@extends ('layouts.app')
+@extends('layouts.app')
+
 @section('content')
     <div id="page-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                
+
                 </div>
                 <!-- /.col-lg-12 -->
                 <div class="col-lg-7" style="padding-bottom:120px">
@@ -32,19 +33,19 @@
                         </div>
                         <div class="form-group">
                             <label>Weight</label>
-                            <input class="form-control" name="weight" value=" {{ Auth::user()->weight }}"  />
+                            <input type="number" class="form-control" name="weight" value=" {{ Auth::user()->weight }}"  />
                         </div>
                         <div class="form-group">
                             <label>Height</label>
-                            <input class="form-control" name="height" value=" {{ Auth::user()->height }}"  />
+                            <input type="number" class="form-control" name="height" value=" {{ Auth::user()->height }}"  />
                         </div>
                          <div class="form-group">
                             <label>Address</label>
-                            <input class="form-control" name="address" value=" {{ Auth::user()->address }}"  />
+                            <input  class="form-control" name="address" value=" {{ Auth::user()->address }}"  />
                         </div>
                          <div class="form-group">
                             <label>Age</label>
-                            <input class="form-control" name="age" value=" {{ Auth::user()->age }}"  />
+                            <input type="number" class="form-control" name="age" value=" {{ Auth::user()->age }}"  />
                         </div>
                         <div class="form-group">
                             <label>Đổi mật khẩu</label>
