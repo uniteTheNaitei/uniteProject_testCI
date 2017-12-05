@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+
 class HomeController extends Controller
 {
     /**
@@ -23,10 +24,6 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('home');
-    }
-    public function profile()
     {
         return view('profile');
     }
@@ -61,4 +58,5 @@ class HomeController extends Controller
          Auth::user()->save() ;
         return redirect('fix/'.$idPerson)->with('thongbao','Sửa thành công');
     }
+    
 }
