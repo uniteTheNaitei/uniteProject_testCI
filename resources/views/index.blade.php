@@ -99,7 +99,7 @@
 										</li>
 										<li><a href="#">UI Animation</a></li>
 										<li><a href="#">Copywriting</a></li>
-										<li><a href="#">Photography</a></li> 
+										<li><a href="#">Photography</a></li>
 									</ul>
 								</li>
 								<li>
@@ -113,7 +113,7 @@
 								<li>
 									<a class="fh5co-sub-ddown">{{$user->name}}</a>
 									 <ul class="fh5co-sub-menu">
-									 	<li><a href="/home">My Profile</a></li>
+									 	<li><a href="profile">My Profile</a></li>
 										 <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -130,16 +130,16 @@
 						</nav>
 					</div>
 				</div>
-			</header>		
+			</header>
 		</div>
 		<!-- end:fh5co-header -->
 		<div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(/assets/images/home-image.jpg);">
+			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(assets/images/home-image.jpg);">
 				<div class="desc animate-box">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-7">
+							<div class="col-m	d-7">
 								<h2>Fitness &amp; Health <br>is a <b>Mentality</b></h2>
 								<span><a class="btn btn-primary" href="#">Start Your Journey</a></span>
 							</div>
@@ -149,8 +149,8 @@
 			</div>
 		</div>
 		<!-- end:fh5co-hero -->
-		
-		
+
+
 
 		<div id="fh5co-programs-section">
 			<div class="container">
@@ -167,7 +167,7 @@
 						<div class="program animate-box">
 							<img src="{{Asset('assets/images/fit-dumbell.svg')}}" alt="Cycling">
 							<h3>Body Combat</h3>
-							
+
 							<span><a href="#" class="btn btn-default">Join Now</a></span>
 						</div>
 					</div>
@@ -175,7 +175,7 @@
 						<div class="program animate-box">
 							<img src="{{Asset('assets/images/fit-yoga.svg')}}" alt="">
 							<h3>Yoga Programs</h3>
-							
+
 							<span><a href="#" class="btn btn-default">Join Now</a></span>
 						</div>
 					</div>
@@ -183,7 +183,7 @@
 						<div class="program animate-box">
 							<img src="{{Asset('assets/images/fit-cycling.svg')}}" alt="">
 							<h3>Cycling Program</h3>
-							
+
 							<span><a href="#" class="btn btn-default">Join Now</a></span>
 						</div>
 					</div>
@@ -191,7 +191,7 @@
 						<div class="program animate-box">
 							<img src="{{Asset('assets/images/fit-boxing.svg')}}" alt="Cycling">
 							<h3>Boxing Fitness</h3>
-							
+
 							<span><a href="#" class="btn btn-default">Join Now</a></span>
 						</div>
 					</div>
@@ -199,7 +199,7 @@
 						<div class="program animate-box">
 							<img src="{{Asset('assets/images/fit-swimming.svg')}}" alt="">
 							<h3>Swimming Program</h3>
-							
+
 							<span><a href="#" class="btn btn-default">Join Now</a></span>
 						</div>
 					</div>
@@ -207,16 +207,16 @@
 						<div class="program animate-box">
 							<img src="{{Asset('assets/images/fit-massage.svg')}}" alt="">
 							<h3>Massage</h3>
-							
+
 							<span><a href="#" class="btn btn-default">Join Now</a></span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		
-		
+
+
+
 		<!-- BLOG HERE  -->
 
 
@@ -228,31 +228,31 @@
 							<div class="heading-section animate-box">
 									<h2>Recently Blog</h2>
 							</div>
-						</div> 
-						<?php $i = 1; ?> 
+						</div>
+						<?php $i = 1; ?>
 						@if (count($course))
 				        @foreach ($course as $post)
 						<div class="col-md-12 col-md-offset-0">
-						
-						
+
+
 							<div class="fh5co-blog animate-box">
 								<div class="inner-post">
 									<a href="#"><img class="img-responsive" src={{$post->img_1}} alt=""></a>
 								</div>
 								 <div class="desc">
 								 	<!-- Fit link here -->
-									<h3><a href=""#>{{$post->name}}</a></h3> 
+									<h3><a href=""#>{{$post->name}}</a></h3>
 									<span class="posted_by">Posted by: Admin</span>
 									<span class="comment"><a href="">21<i class="icon-bubble22"></i></a></span>
 									<p>Far far away, behind the word mountains</p>
 									<a href="#" class="btn btn-default">Read More</a>
-				                    
-				                    
-				                    
-								</div> 
+
+
+
+								</div>
 							</div>
 						</div>
-						
+
 						@endforeach
 				        @endif
 					</div>
@@ -264,7 +264,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- fh5co-blog-section -->
 
 		<footer>
@@ -321,7 +321,7 @@
 				</div>
 			</div>
 		</footer>
-	
+
 
 	</div>
 	<!-- END fh5co-page -->

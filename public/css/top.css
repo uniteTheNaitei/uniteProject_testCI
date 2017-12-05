@@ -21,7 +21,7 @@
 	margin-bottom: 15px;
 	width: auto;
 	height: auto;
-
+	background: red;
 }
 .fix
 {
@@ -30,4 +30,7 @@
 }
 .fix1{
 	margin-left: 500px;
+}
+.dropdown-toggle:focus{
+	background:black !important;
 }
