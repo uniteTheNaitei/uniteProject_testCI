@@ -107,7 +107,25 @@
                                 </li>
                                 <li><a href="trainer.html">Trainers</a></li>
                                 <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                @guest
+                                    <li><a href="/login">Login</a></li>
+                                @else
+                                    <li>
+                                        <a class="fh5co-sub-ddown">{{Auth::user()->name}}</a>
+                                        <ul class="fh5co-sub-menu">
+                                            <li><a href="/profile">My Profile</a></li>
+                                            <a href="{{ route('logout') }}"
+                                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                                Logout
+                                            </a>
+
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                {{ csrf_field() }}
+                                            </form>
+                                        </ul>
+                                    </li>
+                                @endguest
                             </ul>
                         </nav>
                     </div>
