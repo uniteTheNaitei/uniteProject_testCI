@@ -26,7 +26,7 @@ Route::group(['prefix'=>'admin'],function() {
     Route::group(['prefix' => 'person'], function () {
         Route::get('list', 'PersonController@getList');
         Route::get('fix/{idPerson}', 'PersonController@getFix');
-        Route::post('fix/{idPerson}', 'PersonController@postFix')
+        Route::post('fix/{idPerson}', 'PersonController@postFix');
         Route::get('add', 'PersonController@getAdd');
         Route::post('add', 'PersonController@postAdd');
         Route::get('delete/{idPerson}', 'PersonController@getDelete');
